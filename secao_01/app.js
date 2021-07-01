@@ -7,16 +7,16 @@ let sobrenome = "Silva";
 let idade = 24;
 const numCliente = 095864;
 let valorEmprestimo = 150000;
-let taxaDeJuros = 10;
+let taxaDeJuros = 0.10;
+let numAnos = 6;
 let ehBomPagador = "SIM";
 
 console.log("Boa tarde, Sr. "+ nome +" "+ sobrenome + ". Sua idade é: " +idade)
 
-let nm_produto = "Arroz 1kg"
-let vl_preco = 4.50
-let tp_validade = true
+/*montante = valorEmprestimo + juros
+juros = valorEmprestimo * taxaDejuros * numAnos*/
 
-console.log('Produto: '+nm_produto)
-console.log('Preço: '+vl_preco)
-console.log('Validade: '+tp_validade)
+let juros = valorEmprestimo * taxaDeJuros * numAnos;
+let montante = valorEmprestimo + juros
 
+console.log("Valor do Montante: " + montante)
