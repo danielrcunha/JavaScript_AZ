@@ -5,11 +5,11 @@ let anne = 3
 let opcao = prompt("INFORME A LINHA: \n\nAMIGURUMI(1) \nCHARME(2) \nANNE(3)")
 console.log(opcao)
 
-switch(opcao){
+switch (opcao) {
     case "1":
         console.log("amigurumi")
         let cor_amigurumi = prompt("Informe a cor desejada: \n\n8001: Branco\n8990: Preto\n7565: Amêndoa\n7563: Chantily")
-        switch (cor_amigurumi){
+        switch (cor_amigurumi) {
             case "8001":
                 console.log("8001 - Branco")
                 break
@@ -20,16 +20,16 @@ switch(opcao){
                 console.log("7565 - Amêndoa")
                 break
             case "7563":
-                    console.log("7563 - Chantily")
-                    break    
+                console.log("7563 - Chantily")
+                break
             default:
-                alert("Amigurumi, cor "+ cor_amigurumi + " não está disponível")               
+                alert("Amigurumi, cor " + cor_amigurumi + " não está disponível")
         }
         break;
     case "2":
         console.log("Charme")
         let cor_charme = prompt("Informe a cor desejada: \n\n8001: Branco\n8990: Preto\n7565: Amêndoa")
-        switch (cor_charme){
+        switch (cor_charme) {
             case "8001":
                 console.log("8001 - Branco")
                 break
@@ -40,13 +40,13 @@ switch(opcao){
                 console.log("7565 - Amêndoa")
                 break
             default:
-                alert("Charme, cor "+ cor_charme + " não está disponível")               
+                alert("Charme, cor " + cor_charme + " não está disponível")
         }
         break;
     case "3":
         console.log("Anne")
         let cor_anne = prompt("Informe a cor desejada: \n\n8001: Branco\n8990: Preto\n7565: Amêndoa")
-        switch (cor_anne){
+        switch (cor_anne) {
             case "8001":
                 console.log("8001 - Branco")
                 break
@@ -57,9 +57,9 @@ switch(opcao){
                 console.log("7565 - Amêndoa")
                 break
             default:
-                alert("Anne, cor "+ cor_anne + " não está disponível")               
+                alert("Anne, cor " + cor_anne + " não está disponível")
         }
-        break        
+        break
     default:
-        alert(opcao + " não encontrado, verifique as opções no menu!")    
+        alert(opcao + " não encontrado, verifique as opções no menu!")
 }
