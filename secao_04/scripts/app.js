@@ -4,23 +4,23 @@ Sistema de cadastro de clientes
 
 let nome = "Manuel";
 let sobrenome = "Silva";
-let idade = 65;
-const numCliente = 095864;
-let valorEmprestimo = 150000;
-let taxaDeJuros = 0.10;
-let numAnos = 6;
-let ehBomPagador = "SIM";
+let idade = 24;
+let valorEmprestimo;
+let taxaDeJuros;
+let numAnos;
+let juros;
+let montante;
 
-console.log("Boa tarde, Sr. " + nome + " " + sobrenome + ". Sua idade é: " + idade)
+//console.log("Boa tarde, Sr. " + nome + " " + sobrenome + ". Sua idade é: " + idade)
 
 
 /*montante = valorEmprestimo + juros
 juros = valorEmprestimo * taxaDejuros * numAnos*/
 
-let juros = valorEmprestimo * taxaDeJuros * numAnos;
-let montante = valorEmprestimo + juros
+//let juros = valorEmprestimo * taxaDeJuros * numAnos;
+//let montante = valorEmprestimo + juros
 
-console.log("Valor do Montante: " + montante)
+//console.log("Valor do Montante: " + montante)
 
 if (idade >= 18 && idade <= 25) {
     taxaDeJuros = 0.09
@@ -34,5 +34,17 @@ if (idade >= 18 && idade <= 25) {
     taxaDeJuros = 0.06
 }
 
-console.log(taxaDeJuros)
-console.log("O cliente " + nome + (heBomPagador + 'é bom pagador'))
+console.log("taxaDeJuros: " + taxaDeJuros)
+//console.log("O cliente " + nome + (heBomPagador + 'é bom pagador'))
+
+for (let cont = 0; cont < 3; cont++) {
+    valorEmprestimo = parseInt(prompt("Informe o valor do emprestimo:"));
+    numAnos = parseInt(prompt("Informe a quantidade de anos"));
+    juros = valorEmprestimo * taxaDeJuros * numAnos;
+    montante = valorEmprestimo + juros;
+    console.log(montante);
+}
+
+console.log("taxaDeJuros: " + taxaDeJuros)
+console.log("valorEmprestimo: " + valorEmprestimo)
+console.log("numAnos: " + numAnos)
