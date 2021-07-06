@@ -34,17 +34,12 @@ if (idade >= 18 && idade <= 25) {
     taxaDeJuros = 0.06
 }
 
-console.log("taxaDeJuros: " + taxaDeJuros)
-//console.log("O cliente " + nome + (heBomPagador + 'é bom pagador'))
+valorEmprestimo = 1;
+while (valorEmprestimo != 0) { // ! = mesmo que !=
+    valorEmprestimo = parseInt(prompt("Insira o valor do emprestimo: "))
+    numAnos = parseInt(prompt("Insira o numero de anos"))
 
-for (let cont = 0; cont < 3; cont++) {
-    valorEmprestimo = parseInt(prompt("Informe o valor do emprestimo:"));
-    numAnos = parseInt(prompt("Informe a quantidade de anos"));
-    juros = valorEmprestimo * taxaDeJuros * numAnos;
-    montante = valorEmprestimo + juros;
-    console.log(montante);
+    juros = valorEmprestimo * taxaDejuros * numAnos
+    montante = valorEmprestimo + juros
+    console.log(montante)
 }
-
-console.log("taxaDeJuros: " + taxaDeJuros)
-console.log("valorEmprestimo: " + valorEmprestimo)
-console.log("numAnos: " + numAnos)
