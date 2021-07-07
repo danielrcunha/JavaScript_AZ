@@ -34,25 +34,12 @@ if (idade >= 18 && idade <= 25) {
     taxaDeJuros = 0.06
 }
 
-valorEmprestimo = 1;
-while (valorEmprestimo != 0) { // ! = mesmo que !=
+
+do {
     valorEmprestimo = parseInt(prompt("Insira o valor do emprestimo: "))
     numAnos = parseInt(prompt("Insira o numero de anos"))
 
     juros = valorEmprestimo * taxaDeJuros * numAnos
     montante = valorEmprestimo + juros
     console.log(montante)
-}
-
-//USANDO O BREAK QUANDO O VALOR ZERO FOR DIGITADO
-/*while (true) {
-    valorEmprestimo = parseInt(prompt("Insira o valor do emprestimo: "))
-    if (valorEmprestimo === 0) { // === igual
-        break
-    }
-
-    numAnos = parseInt(prompt("Insira o numero de anos"))
-    juros = valorEmprestimo * taxaDeJuros * numAnos
-    montante = valorEmprestimo + juros
-    console.log(montante)
-}*/
+} while (valorEmprestimo != 0) { // ! = mesmo que !=
