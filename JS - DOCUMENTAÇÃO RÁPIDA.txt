@@ -1,0 +1,13 @@
+JavaScript - DOCUMENTAÇÃO RÁPIDA
+
+#PARA MANIPULAR DATAS:
+const now = new Date()
+console.log(now)
+console.log(now.getUTCFullYear())//ano
+console.log(now.getMonth())
+console.log(now.getDate())
+console.log(now.getDate() + '/' + now.getMonth() + '/' + now.getFullYear())
+console.log(now.getDate())
+console.log(now.getHours())
+console.log(now.getMinutes())
+
