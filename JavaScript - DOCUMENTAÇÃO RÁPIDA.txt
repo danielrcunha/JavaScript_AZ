@@ -11,3 +11,14 @@ console.log(now.getDate())
 console.log(now.getHours())
 console.log(now.getMinutes())
 
+#CONVERTE PARA INT
+parseInt()
+
+#EXEMPLO DE OPERADOR TERNARIO:
+//substituindo pelo o IF pelo ternario
+console.log("O cliente " + nome + (ehBomPagador ? " é bom pagador" : " não é bom pagador"))
+
+//EXEMPLO DE OPERADOR TERNACIO COM 3 SAIDAS
+console.log(a = b ? "Você informou que A = " + a + " e B = " + b + "\n dessa forma a análise feita pelo 'OPER. TERNÁRIO' diz que A é igual a B" : console.log(a > b ? "Você informou que A = " + a + " e B = " + b + "\n dessa forma a análise feita pelo 'OPER. TERNÁRIO' diz que A é maior que B" : "Você informou que A = " + a + " e B = " + b + "\n dessa forma a análise feita pelo 'OPER. TERNÁRIO' diz que B é maior que A"))
+
+
