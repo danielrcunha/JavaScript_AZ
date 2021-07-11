@@ -21,4 +21,18 @@ console.log("O cliente " + nome + (ehBomPagador ? " é bom pagador" : " não é 
 //EXEMPLO DE OPERADOR TERNACIO COM 3 SAIDAS
 console.log(a = b ? "Você informou que A = " + a + " e B = " + b + "\n dessa forma a análise feita pelo 'OPER. TERNÁRIO' diz que A é igual a B" : console.log(a > b ? "Você informou que A = " + a + " e B = " + b + "\n dessa forma a análise feita pelo 'OPER. TERNÁRIO' diz que A é maior que B" : "Você informou que A = " + a + " e B = " + b + "\n dessa forma a análise feita pelo 'OPER. TERNÁRIO' diz que B é maior que A"))
 
+//EXEMPLO DE CASESENSITIVE, INFORMANDO TANTO MAIUSCULAS COMO MINUSCULAS COM TOLOWERCASE
+let recebeMes = prompt("Digite o mês:")
+let mes = recebeMes.toLowerCase()
 
+switch (mes) {
+    case 'dezembro':
+        console.log("Dezembro")
+        break;
+    case 'janeiro':
+        console.log("Janeiro")
+        break;
+    default:
+        console.log("Mês invalido")
+        break;
+}
