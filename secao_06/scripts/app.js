@@ -13,7 +13,7 @@ let heBomPagador;
 let montante;
 
 function cadastraCliente(nomeCliente, sobrenomeCliente, idadeCliente,
-    valorEmprestimoCliente, numAnosCliente, heBomPagadorCliente) {
+    valorEmprestimoCliente, numAnosCliente = 2, heBomPagadorCliente = false) {
     nome = nomeCliente;
     sobrenome = sobrenomeCliente;
     idade = idadeCliente;
@@ -47,12 +47,14 @@ juros = valorEmprestimo * taxaDejuros * numAnos*/
 //console.log("Valor do Montante: " + montante)
 
 
-cadastraCliente("Manuel", "Silva", 24, 150000, 2, true)
+cadastraCliente("Manuel", "Silva", 24, 150000)
 console.log(nome)
 console.log(sobrenome)
-console.log(taxaDeJuros)
+console.log(numAnos)
+console.log(heBomPagador)
 
-cadastraCliente("Edval", "Silveira", 56, 150000, 9, false)
+cadastraCliente("Edval", "Silveira", 56, 150000, 9)
 console.log(nome)
 console.log(sobrenome)
-console.log(taxaDeJuros)
+console.log(numAnos)
+console.log(heBomPagador)
