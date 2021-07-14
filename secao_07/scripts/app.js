@@ -11,10 +11,12 @@ let numAnos;
 let juros;
 let heBomPagador;
 let montante;
-let avalista;
+let avalistas;
+
 
 function cadastraCliente(nomeCliente, sobrenomeCliente, idadeCliente,
-    valorEmprestimoCliente, numAnosCliente = 2, heBomPagadorCliente = false, avalistaCliente) {
+    valorEmprestimoCliente, numAnosCliente = 2,
+    heBomPagadorCliente = false, avalistaCliente) {
     nome = nomeCliente;
     sobrenome = sobrenomeCliente;
     idade = idadeCliente;
@@ -50,9 +52,33 @@ juros = valorEmprestimo * taxaDejuros * numAnos*/
 
 
 cadastraCliente("Edval", "Silveira", 56, 150000, 9, true, ["Manuel", "Raphael", "Bruno"])
-console.log(nome);
-console.log(avalistas);
-console.log(avalistas[0]);
-console.log(avalistas[1]);
-console.log(avalistas[2]);
 
+function adicionaAvalista(avalista) {
+    avalistas.push(avalista);
+}
+
+function removeAvalista() {
+    avalistas.pop();
+}
+
+function editaAvalista(nomeAvalista, indice) {
+    avalistas[indice] = nomeAvalista;
+}
+
+function ordenaAvaslita() {
+    return avalistas.sort();
+
+}
+
+adicionaAvalista("Andrew")
+adicionaAvalista("José")
+adicionaAvalista("Marcos")
+console.log(avalistas);
+
+removeAvalista();
+removeAvalista();
+console.log(avalistas);
+
+editaAvalista("Manuel Silva", 0);
+console.log(avalistas[0]);
+console.log(ordenaAvaslita());
