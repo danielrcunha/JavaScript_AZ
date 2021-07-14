@@ -36,3 +36,30 @@ switch (mes) {
         console.log("Mês invalido")
         break;
 }
+
+//METODOS EM ARRAY:
+PUSH()
+Adicionar um ou mais elementos ao final do array(pode adicionar mais de um)
+
+UNSHIFT()
+Adicionar um ou mais elementos no inicio do array.
+
+POP()
+Remove o último elementos ao array
+
+SHIFT()
+Remove o primeiro elemento do array
+
+SPLICE()
+Remove um intervalo de elementos do array
+exemplo: frutas.splice(3,2) //dessa forma remove os elementos das posições 3 e 2.
+
+SORT()
+Ordena o array em ordem crescente
+
+REVERSE()
+inverte a ordem do array(fica decrescente)
+
+
+
+
