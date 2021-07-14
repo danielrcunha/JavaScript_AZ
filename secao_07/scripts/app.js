@@ -2,14 +2,40 @@
 SISTEMA DO BANCO
 */
 
-let nome = "Manuel";
-let sobrenome = "Silva";
-let idade = 24;
+let nome
+let sobrenome
+let idade
 let valorEmprestimo;
 let taxaDeJuros;
 let numAnos;
 let juros;
+let heBomPagador;
 let montante;
+let avalista;
+
+function cadastraCliente(nomeCliente, sobrenomeCliente, idadeCliente,
+    valorEmprestimoCliente, numAnosCliente = 2, heBomPagadorCliente = false, avalistaCliente) {
+    nome = nomeCliente;
+    sobrenome = sobrenomeCliente;
+    idade = idadeCliente;
+    valorEmprestimo = valorEmprestimoCliente;
+    numAnos = numAnosCliente;
+    heBomPagador = heBomPagadorCliente;
+    taxaDeJuros = defineTaxa(idadeCliente)
+    avalistas = avalistaCliente;
+}
+
+function defineTaxa(idadeCliente) {
+    if (idade >= 18 && idade <= 25) {
+        return 0.09;
+    } else if (idade >= 26 && idade <= 35) {
+        return 0.08;
+    } else if (idade >= 36 && idade <= 50) {
+        return 0.07;
+    } else {
+        return 0.06;
+    }
+}
 
 //console.log("Boa tarde, Sr. " + nome + " " + sobrenome + ". Sua idade é: " + idade)
 
@@ -22,29 +48,11 @@ juros = valorEmprestimo * taxaDejuros * numAnos*/
 
 //console.log("Valor do Montante: " + montante)
 
-if (idade >= 18 && idade <= 25) {
-    taxaDeJuros = 0.09
-} else if (idade >= 26 && idade <= 35) {
-    taxaDeJuros = 0.08
-} else if (idade >= 36 && idade <= 50) {
-    taxaDeJuros = 0.07
-} else if (idade >= 18 && idade <= 25) {
-    taxaDeJuros = 0.09
-} else {
-    taxaDeJuros = 0.06
-}
 
-console.log("taxaDeJuros: " + taxaDeJuros)
-//console.log("O cliente " + nome + (heBomPagador + 'é bom pagador'))
+cadastraCliente("Edval", "Silveira", 56, 150000, 9, true, ["Manuel", "Raphael", "Bruno"])
+console.log(nome);
+console.log(avalistas);
+console.log(avalistas[0]);
+console.log(avalistas[1]);
+console.log(avalistas[2]);
 
-for (let cont = 0; cont < 3; cont++) {
-    valorEmprestimo = parseInt(prompt("Informe o valor do emprestimo:"));
-    numAnos = parseInt(prompt("Informe a quantidade de anos"));
-    juros = valorEmprestimo * taxaDeJuros * numAnos;
-    montante = valorEmprestimo + juros;
-    console.log(montante);
-}
-
-console.log("taxaDeJuros: " + taxaDeJuros)
-console.log("valorEmprestimo: " + valorEmprestimo)
-console.log("numAnos: " + numAnos)
