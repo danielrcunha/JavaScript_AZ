@@ -60,6 +60,12 @@ Ordena o array em ordem crescente
 REVERSE()
 inverte a ordem do array(fica decrescente)
 
+MAP()
+mapeia um array de origem e gera um novo array
+
+FILTER()
+Filtra os elementos de um array e dera um novo array
+
 
 
 
