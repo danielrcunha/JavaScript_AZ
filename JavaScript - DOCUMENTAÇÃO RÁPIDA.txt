@@ -69,6 +69,10 @@ Filtra os elementos de um array e dera um novo array
 FIND()
 Obtem o valor do primeiro elemento no array que satisfaz a condição
 
+MATH
+Objeto para realizar operações matemáticas em números
+
+math.floor() :: retorna o número arredondando para baixo;
 
 
 
