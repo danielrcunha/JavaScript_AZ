@@ -66,6 +66,9 @@ mapeia um array de origem e gera um novo array
 FILTER()
 Filtra os elementos de um array e dera um novo array
 
+FIND()
+Obtem o valor do primeiro elemento no array que satisfaz a condição
+
 
 
 
