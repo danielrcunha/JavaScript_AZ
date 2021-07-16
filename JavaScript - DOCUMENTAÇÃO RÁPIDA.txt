@@ -71,8 +71,22 @@ Obtem o valor do primeiro elemento no array que satisfaz a condição
 
 MATH
 Objeto para realizar operações matemáticas em números
-
 math.floor() :: retorna o número arredondando para baixo;
 
+#TIPOS DE FOR#
+Tradicional
+For IN(não aconselhado usar em arrays)
+For OF
+ForEach()
+
+#ARRAYS BIDIMENSIONAIS - MATRIZ#
+
+#ADICIONANDO UM NOVO VALOR AO ARRAY COM PUSH#
+const clientes = [["Manuel", 24, true], ["Edval", 24, false], ["Raphael", 19, true]];
+clientes.push(["Bruno", 27, false]);
+
+#REMOVE DO ARRAY#
+clientes.pop(); //remove do array o último inserido
+clientes.pop(4) //remove do array de acordo com o indice
 
 
