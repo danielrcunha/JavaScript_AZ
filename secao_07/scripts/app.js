@@ -67,7 +67,12 @@ function editaAvalista(nomeAvalista, indice) {
 
 function ordenaAvaslita() {
     return avalistas.sort();
+}
 
+function exibeAvalistas() {
+    avalistas.forEach((avalista, indice) => {
+        console.log(`O ${indice + 1}º avalista é ${avalista}`);
+    });
 }
 
 adicionaAvalista("Andrew")
@@ -82,3 +87,5 @@ console.log(avalistas);
 editaAvalista("Manuel Silva", 0);
 console.log(avalistas[0]);
 console.log(ordenaAvaslita());
+
+exibeAvalistas();
