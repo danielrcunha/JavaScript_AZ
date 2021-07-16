@@ -11,6 +11,6 @@ console.log(clientes);
 console.table(clientes)
 
 clientes.push(["Daniel", 37, true]);
-clientes.pop();
-clientes.pop(4)
+clientes.pop(); //remove do array o último inserido
+clientes.pop(4) //remove do array de acordo com o indice
 console.table(clientes)
