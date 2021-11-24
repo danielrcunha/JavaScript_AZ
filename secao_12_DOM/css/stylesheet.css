@@ -25,3 +25,14 @@
     background-color: tomato;
 }
 
+#paleta4{
+    background-color: black;
+}
+
+.titulo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 10px;
+}
+
