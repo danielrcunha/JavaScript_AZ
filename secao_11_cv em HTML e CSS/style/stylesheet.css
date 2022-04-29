@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+}
+
+h2, h3, p{
+    padding-top: 10px;
+}
+
+
+div.perfil{
+    background-color: azure;
+    text-align: center; /*centralizar o texto*/
+}
+
+div.resumo{
+    background-color: cornsilk;
+    text-align: center;
+}
+
+a.button{
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+h2{
+    color: blue;
+}
+
+hr{
+    background-color: brown, green, blue;
+}
+
+h3{
+    color:blueviolet;
+}
+
+#GITHUB{
+    background-color: rgb(12, 12, 12);
+}
+
+#LINKEDIN{
+    background-color: #0e76a8
+}
